@@ -1,8 +1,17 @@
 aid: pharmeasy
 name: Pharmeasy
-description: 'Pharmeasy is a company surfaced as a portfolio company of bessemer-venture-partners, prosus-ventures
-  and added to the API Evangelist network as a stub for enrichment. Sector: healthcare. This profile is
-  a lead awaiting the enrichment pipeline.'
+description: >-
+  PharmEasy is one of India's largest digital healthcare platforms, operating a
+  consumer online pharmacy and health marketplace at pharmeasy.in. It lets users
+  order prescription and over-the-counter medicines (with prescription upload and
+  verification), buy health and wellness products, book diagnostic lab tests and
+  health checkup packages, and consult doctors via telemedicine, plus a PLUS
+  subscription for recurring savings. Surfaced as a portfolio company of Bessemer
+  Venture Partners and Prosus Ventures and added to the API Evangelist network for
+  enrichment. PharmEasy runs an internal API at api.pharmeasy.in but publishes no
+  public developer program, API documentation, SDKs, or OpenAPI; it does operate a
+  responsible-disclosure security program (infosec@pharmeasy.in). Sector:
+  healthcare / e-pharmacy.
 url: https://raw.githubusercontent.com/api-evangelist/pharmeasy/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,12 +20,30 @@ x-backed-by:
 - prosus-ventures
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
+image: https://pharmeasy.in/pe_logo_2x.png
 tags:
 - Company
 - Healthcare
+- Pharmacy
+- E-Pharmacy
+- Diagnostics
+- Telemedicine
+- India
+- E-Commerce
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -24,5 +51,26 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/pharmeasy-domain-security.yml
 - type: Website
   url: https://www.pharmeasy.in/
+- type: Blog
+  url: https://pharmeasy.in/blog
+- type: PrivacyPolicy
+  url: https://pharmeasy.in/legal/privacy-policy
+- type: TermsOfService
+  url: https://pharmeasy.in/legal/terms-and-conditions
+- type: Support
+  url: https://pharmeasy.in/customer-support-policy
+- type: VulnerabilityDisclosure
+  url: https://pharmeasy.in/vulnerability-disclosure-policy
+- type: Security
+  url: https://pharmeasy.in/vulnerability-disclosure-policy
+- type: WellKnown
+  url: well-known/pharmeasy-well-known.yml
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 3
+  pass: local-v1

@@ -1,0 +1,31 @@
+generated: '2026-07-20'
+method: searched
+source: live probes of PharmEasy hosts
+note: >-
+  No .well-known discovery documents are published. www.pharmeasy.in redirects
+  every /.well-known/ path to the homepage (301); api.pharmeasy.in (the internal
+  API host referenced in the vulnerability-disclosure policy) returns 403 for
+  /.well-known/ paths and 404 for docs/swagger/openapi paths. PharmEasy is a
+  consumer B2C pharmacy app with no public developer/API program. Recorded as an
+  honest negative result.
+hosts:
+- host: https://www.pharmeasy.in
+  documents:
+  - path: /.well-known/security.txt
+    status: 301
+  - path: /.well-known/openid-configuration
+    status: 301
+  - path: /.well-known/oauth-authorization-server
+    status: 301
+  - path: /.well-known/api-catalog
+    status: 301
+  - path: /.well-known/ai-plugin.json
+    status: 301
+- host: https://api.pharmeasy.in
+  documents:
+  - path: /.well-known/security.txt
+    status: 403
+  - path: /.well-known/openid-configuration
+    status: 403
+  - path: /.well-known/api-catalog
+    status: 403
